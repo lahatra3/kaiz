@@ -104,7 +104,7 @@ pub fn main() !void {
     // const results = OllamaResponse.init(parsed);
 
     try stdout.print(
-        \\ {s}
+        \\ {any}
         \\
     , .{parsed.value.object.get("context").?.array.items});
 }
